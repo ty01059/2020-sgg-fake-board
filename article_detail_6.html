@@ -102,23 +102,87 @@
 	<div class="con">
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
-				<h3 class="article-detail__board-name">[자유 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> 제목2</h2>
+				<h3 class="article-detail__board-name">[JAVA 게시판] &nbsp;</h3>
+				<h2 class="article-detail__title"> 3강, Variable(2)</h2>
 			</div>
 			<div class="article-detail__sub-info flex">
 			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
 				<div class="article-detail__reg-date">2020-12-23 10:27:59</div>
-				<div><i class="fas fa-eye"></i>&nbsp;0</div>
+				<div><i class="fas fa-eye"></i>&nbsp;3</div>
 			</div>
 
-			<div class="article-detail__body main-font"># 자바기본문법
-```java
-int a = 10;
-int b = 20;
-int c = a + b;
+			<div class="article-detail__body main-font"># Variable
+- 변수 선언
+- 변수들의 집합
+
+# 배열의 종류
+
+ ## Array
+```
+- 변수를 선언하면서 크기를 지정해주어야 한다.
+- 한번 배열을 선언하면 크기를 변경할 수 없다.
+
+ex)
+// 선언
+int[] i = new int[10];
+String[] str = new String[10];
+// 추출
+int[1];
+String[2];
+```
+## List
+```
+- 변수 선언하면서 크기를 지정해주지 않아도 된다.
+- 값의 크기가 변하는 경우 사용
+
+ex)
+import java.util.ArrayList;
+ArrayList<Integer> list = new ArrayList<Integer>();
+
+// 값 추가
+list.add(1);
+list.add(2);
+list.add(3); // list = {1,2,3}
+
+// 값 추출
+list.get(0); // 1
+
+// List크기를 반환
+list.size(); // 3
+
+// 값이 있는지 확인
+list.contains(2); // true
+
+// 값 제거
+list.remove(0); // list = {2,3}
+```
+## Map
+```
+- (key, value)로 값을 저장한다.
+- index에 제한받지 않고 값을 찾거나 저장할 수 있다.
+
+ex)
+import java.util.Map;
+import java.util.HashMap;
+HashMap<dataType, dataType> map = new HashMap<dataType, dataType>();
+
+// 값 저장
+map.put("key", "value"); // map = {"key" : "value"}
+
+// 값 추출
+map.get("key"); // "value"
+
+// 값을 확인
+map.containsKey("key"); // true
+
+// 값을 제거
+map.remove("key");
+
+// 크기 반환
+map.size(); // 1
 ```</div>
 			
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/iQqa20RTLIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
 			
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
@@ -138,14 +202,14 @@ int c = a + b;
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title="제목1🐳"
-					href="article_detail_1.html"
+				<a title="2강, Variable(1)"
+					href="article_detail_5.html"
 					class="">&lt;
-					이전글</a> <a href="article_list_free_1.html"
+					이전글</a> <a href="article_list_it_1.html"
 					class="">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">다음글
+				<a title="4강, 제어문"
+					href="article_detail_7.html"
+					class="">다음글
 					&gt;</a>
 			</div>
 		</div>

@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0JV64MZYX"></script>
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-C0JV64MZYX"></script>
 <!-- Google adsense -->
-<script data-ad-client="ca-pub-6672613329449103" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-6672613329449103" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,22 +16,24 @@
 </script>
 <meta charset="UTF-8" />
 <title>게시판 작성</title>
-<meta name="google-site-verification" content="P3TaZ-4fh-rMYo6dUuy7t4gVVqYiJzUpGX3n2UbOIoQ" />
+<meta name="google-site-verification"
+	content="P3TaZ-4fh-rMYo6dUuy7t4gVVqYiJzUpGX3n2UbOIoQ" />
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<!-- 파비콘 적용 -->
+<link rel=" shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+
 </head>
 <body>
 	<div class="body-content min-height-100vh flex flex-column">
 		<!-- 로고바 시작 -->
 		<header class="logo-bar con-min-width">
 			<div class="con height-100p flex flex-jc-c">
-				<a href="#" class="logo flex flex-ai-c">
-					<i class="fab fa-jenkins"></i>
-					<span>
-						Develo<span>p</span>ers
-					</span>
+				<a href="index.html" class="logo flex flex-ai-c"> <span>
+						Blog </span>
 				</a>
 			</div>
 		</header>
@@ -40,60 +44,40 @@
 			<div class="con height-100p">
 				<nav class="menu-bar__menu-1">
 					<ul class="flex">
-						<li>
-							<a href="./" class="block">
-								<i class="fas fa-home"></i>
-								<span>HOME</span>
-							</a>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-list"></i>
-								<span>ARTICLES</span>
-							</a>
+						<li><a href="index.html" class="block"> <i
+								class="fas fa-home"></i> <span>HOME</span>
+						</a></li>
+						<li><a class="block"> <i class="fas fa-list"></i> <span>ARTICLES</span>
+						</a>
+							<ul><li><a href="article_list_it_1.html" class="block"><i class="fas fa-flag"></i> <span>IT LIST</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+							</ul></li>
+						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
+						</a>
 							<ul>
-								<li><a href="article_list_it_1.html" class="block"><i class="fas fa-flag"></i> <span>IT LIST</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-link"></i>
-								<span>LINK</span>
-							</a>
-							<ul>
-								<li>
-									<a href="https://jhs512.github.io/blog/" target="_blank"
-										class="block">
-										<i class="fab fa-blogger-b"></i>
+								<li><a href="https://jhs512.github.io/blog/"
+									target="_blank" class="block"> <i class="fab fa-blogger-b"></i>
 										<span>BLOG</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://github.com/" target="_blank" class="block">
-										<i class="fab fa-github"></i>
-										<span>GITHUB</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="stat.html" class="block">
-								<i class="fas fa-chart-pie"></i>
-								<span>STATISTICS</span>
-							</a>
-						</li>
+								</a></li>
+								<li><a href="https://github.com/" target="_blank"
+									class="block"> <i class="fab fa-github"></i> <span>GITHUB</span>
+								</a></li>
+							</ul></li>
+						<li><a href="stat.html" class="block"> <i
+								class="fas fa-chart-pie"></i> <span>STATISTICS</span>
+						</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<!-- 메뉴바 끝 -->
 
-		<main class="flex-grow-1">
-			<section class="title-bar con-min-width">
-				<h1 class="con">
-					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
-				</h1>
-			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+		<main class="flex-grow-1 overflow-y-hidden">
+			<div class="main-content flex flex-jc-c position-relative">
+				<div class="position-absolute con-min-width"></div>
+				<div class="position-absolute background-opacity overflow-y-auto height-88per">
+					<section class="title-bar con-min-width">
+						<h1 class="con"><i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span></h1>
+					</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
 <link rel="stylesheet"
@@ -119,16 +103,18 @@
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
 				<h3 class="article-detail__board-name">[JAVA 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> 2강, Variable</h2>
+				<h2 class="article-detail__title"> 2강, Variable(1)</h2>
 			</div>
 			<div class="article-detail__sub-info flex">
 			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2020-12-18 17:13:58</div>
-				<div><i class="fas fa-eye"></i>&nbsp;</div>
+				<div class="article-detail__reg-date">2020-12-23 10:27:59</div>
+				<div><i class="fas fa-eye"></i>&nbsp;2</div>
 			</div>
 
 			<div class="article-detail__body main-font"># Variable
-- 변수
+- 변수 선언
+- 변수에 이름을 정해 값을 저장할 수 있는 메모리 공간을 생성
+- 데이터 타입에 따라서 변수의 크기가 달라진다.
 
 # 변수의 타입
 
@@ -145,18 +131,19 @@
 ```
 ## 논리형
 ```
- - boolean 
+ - boolean : true, false
 ```
 ## 문자형
 ```
- - char 
+ - char : 'a', 'b' ... 
 ```
 ## 문자열
 ```
- - String
-```
-</div>
-
+ - String : 'abc' ...
+```</div>
+			
+			
+			
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
 				<script>
@@ -180,23 +167,21 @@
 					class="">&lt;
 					이전글</a> <a href="article_list_it_1.html"
 					class="">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">다음글
+				<a title="3강, Variable(2)"
+					href="article_detail_6.html"
+					class="">다음글
 					&gt;</a>
 			</div>
 		</div>
 	</div>
 </section>
-
-</main>
-
+</div>
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
 		<a href="#" class="logo logo--mini flex flex-ai-c">
 			<i class="fab fa-jenkins"></i>
 			<span>
-				Develo<span>p</span>ers
+				Blog
 			</span>
 		</a>
 
@@ -206,6 +191,8 @@
 			deleniti qui eius facere, harum error eveniet vel laudantium.</div>
 	</div>
 </footer>
+</div>
+</main>
 </div>
 <script src="app.js"></script>
 </body>
